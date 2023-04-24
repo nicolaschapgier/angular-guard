@@ -3,10 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SecuredComponentComponent } from './secured-component/secured-component.component';
+import { NotsecuredComponent } from './notsecured/notsecured.component';
+import { HomePageComponent } from './challenge/home-page/home-page.component';
+import { DashboardComponent } from './challenge/dashboard/dashboard.component';
+import { AdminPageComponent } from './challenge/admin-page/admin-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SecuredComponentComponent,
+    NotsecuredComponent,
+    HomePageComponent,
+    DashboardComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
