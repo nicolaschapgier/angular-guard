@@ -8,6 +8,7 @@ import { NotsecuredComponent } from './notsecured/notsecured.component';
 import { HomePageComponent } from './challenge/home-page/home-page.component';
 import { DashboardComponent } from './challenge/dashboard/dashboard.component';
 import { AdminPageComponent } from './challenge/admin-page/admin-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,10 @@ import { AdminPageComponent } from './challenge/admin-page/admin-page.component'
     NotsecuredComponent,
     HomePageComponent,
     DashboardComponent,
-    AdminPageComponent
+    AdminPageComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
