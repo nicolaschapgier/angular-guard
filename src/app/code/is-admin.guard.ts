@@ -24,6 +24,7 @@ export class IsAdminGuard {
     if (this.userService.getRole() == 'ADMIN') {
       return true;
     }
+    alert("Coucou tu n'es pas ADMIN tu n'as pas les accès.");
     return this.router.navigate(['/home-page']);
 
     // return false;

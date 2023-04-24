@@ -29,6 +29,7 @@ export class IsConnectedGuard {
     ) {
       return true;
     }
+    alert("Coucou tu n'es pas identifié tu n'as pas les accès.");
     return false;
   }
 }

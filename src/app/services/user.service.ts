@@ -11,7 +11,7 @@ export class UserService {
     return of(false).pipe(delay(3000));
   }
 
-  private role: string = 'USER';
+  private role: string = 'ADMIN';
 
   getRole(): string {
     return this.role;
